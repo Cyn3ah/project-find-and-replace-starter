@@ -19,8 +19,26 @@ function getCellElements (currentRowElement) {
     return currentRowElement.querySelectorAll(".cell")
 }
 
+replaceAllButton.addEventListener('click', function (event)) {
+}
+    for (let findInput = 0; findInput < rowElements.length; findInput += 1) {
 
-// YOUR CODE GOES HERE
+        while (rowElements.contains(findInput)) {
+            replaceInput.innerHTMl[] = replaceInput;
+        }
+
+        // ROW INDEX - CELL INDEX - RESULT(S)
+    
+    const foundResult = searchResults[findInput];
+
+    for (let replaceInput = 0; replaceInput < getCellElements.length; replaceInput += 1)
+
+
+    
+
+
+}
+
 
 
 // One last thing: dedicate very careful attention to using variables and
