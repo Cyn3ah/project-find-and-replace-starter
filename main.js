@@ -19,22 +19,24 @@ function getCellElements (currentRowElement) {
     return currentRowElement.querySelectorAll(".cell")
 }
 
-replaceAllButton.addEventListener('click', function (event)) {
-}
+replaceAllButton.addEventListener('click', function (event) {
     for (let findInput = 0; findInput < rowElements.length; findInput += 1) {
-
-        while (rowElements.contains(findInput)) {
-            replaceInput.innerHTMl[] = replaceInput;
-        }
-
-        // ROW INDEX - CELL INDEX - RESULT(S)
+        
+        replaceInput.innerHTMl[".cell"] = replaceInput;
+    }
+    
+    // ROW INDEX - CELL INDEX - RESULT(S)
     
     const foundResult = searchResults[findInput];
-
-    for (let replaceInput = 0; replaceInput < getCellElements.length; replaceInput += 1)
-
-
     
+    for (let replaceInput = 0; replaceInput < getCellElements.length; replaceInput += 1) {
+        
+    }
+    
+})
+    
+
+while (rowElements.contains(findInput)) {
 
 
 }
