@@ -22,7 +22,7 @@ function getCellElements (currentRowElement) {
 replaceAllButton.addEventListener('click', function (event) {
     for (let findInput = 0; findInput < rowElements.length; findInput += 1) {
         
-        replaceInput.innerHTMl[".cell"] = replaceInput;
+        replaceInput.innerHTMl["cell"] = replaceInput;
     }
     
     // ROW INDEX - CELL INDEX - RESULT(S)
