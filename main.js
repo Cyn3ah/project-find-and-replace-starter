@@ -20,6 +20,10 @@ function getCellElements (currentRowElement) {
 }
 
 replaceAllButton.addEventListener('click', function (event) {
+
+    let findText = findInput.value
+    let replaceText = replaceInput.value
+
     for (let findInput = 0; findInput < rowElements.length; findInput += 1) {
         
         replaceInput.innerHTMl["cell"] = replaceInput;
