@@ -15,35 +15,51 @@ const rowElements = document.querySelectorAll(".row")
 // Call this function from WITHIN your row elements loop. Then you will, in turn,
 // need to loop over the resulting cell elements. But where should this whole
 // NESTED LOOP go? Think through the user's experience: when should WHAT happen? 
-function getCellElements (currentRowElement) {
+function getCellElements(currentRowElement) {
     return currentRowElement.querySelectorAll(".cell")
 }
 
-replaceAllButton.addEventListener('click', function (event) {
+replaceAllButton.addEventListener('click', function () {
 
+    let whatCurrentText = findInput.value
+    let futureIngoingText = replaceInput.value
+    let cellElementsArray = getCellElements(rowElements[index])
     let findText = findInput.value
-    let replaceText = replaceInput.value
+    let whatCurrentText = replaceInput.value
 
-    for (let findInput = 0; findInput < rowElements.length; findInput += 1) {
-        
-        replaceInput.innerHTMl[".cell"] = replaceInput;
-    }
-    
-    // ROW INDEX - CELL INDEX - RESULT(S)
-    
-    const foundResult = searchResults[findInput];
-    
-    for (let replaceInput = 0; replaceInput < getCellElements.length; replaceInput += 1) {
-        
-    }
-    
+    for (let index = 0; rowElements.length > index; index++)
+
+
+        for (let cellIndex = 0; cellIndex < cellElementsArray.length; cellIndex++) {
+
+            while (findingString.HTML.includes(whatCurrentText)) {
+                findingString.innerHTML = findingString.innerHtml.replace(whatCurrentText, futureIngoingText)
+            }
+
+            while (cellElementsArray[cellIndex].innerHTML.includes(findText)) {
+
+                let findingString = cellElementsArray[cellIndex].innerHTML.includes(findText)
+            }
+
+        }
+
+    replaceInput.innerHTMl[".cell"] = replaceInput;
 })
-    
 
-while (rowElements.contains(findInput)) {
+// ROW INDEX - CELL INDEX - RESULT(S)
 
+const foundResult = searchResults[findInput];
+
+for (let replaceInput = 0; replaceInput < getCellElements.length; replaceInput += 1) {
 
 }
+
+cellElements[cellIndex].innerHTML = cellElements[cellIndex].innerHTML.replace(findText, replaceText)
+
+// while (rowElements.contains(findInput)) {
+
+
+// }
 
 
 
